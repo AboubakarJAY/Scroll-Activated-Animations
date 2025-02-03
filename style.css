@@ -1,11 +1,71 @@
-#myList li {
-  padding-left: 7px;
-  margin-bottom: 15px;
-  transition: all 0.2s ease-in-out;
-  transform: translate3d(0px, 30px, 0);
-  opacity: 0;
+body {
+  background: #3d737f;
+  padding: 50px;
+  transition: background ease 1s;
 }
-#myList li.active {
-  transform: translate3d(0px, 0, 0);
-  opacity: 1;
+
+h1 {
+  font-size: 50px;
+}
+
+ol > li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.view {
+  animation: decalage ease-out 0.3s;
+}
+
+.view-card {
+  animation: decalage-card ease 0.3s;
+}
+
+@keyframes decalage {
+  0% {
+    opacity: 0;
+    transform: translate3d(10px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+@keyframes decalage-card {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 90px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.div1 {
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: darkslategray;
+}
+
+.div2 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.div3 {
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: #090a0a;
 }
